@@ -1,15 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import renderNameTitle, { NameProfile } from './components/name';
+import { CanvasContainer } from './components';
+
+const profileName: NameProfile = {
+  firstName: 'Andrew',
+  lastName: 'Doan',
+  nickName: 'Andy'
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>
-          Andrew H. Doan
-        </h1>
-        <img src={logo} className="App-logo" alt="logo" />
+      <CanvasContainer>
+        {renderNameTitle(profileName)}
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -21,7 +26,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </CanvasContainer>
     </div>
   );
 }
