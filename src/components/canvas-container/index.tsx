@@ -8,4 +8,5 @@ export const CanvasContainer = styled.section`
   align-items: left;
   font-size: calc(10px + 2vmin);
   color: white;
+  z-index: -1;
 `
