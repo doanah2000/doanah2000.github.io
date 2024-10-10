@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Website for Andrew Doan, hosted on github.io
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+
+This website is hosted on github pages. Built from typescript and react, changes are deployed using the [react-gh-pages](https://github.com/gitname/react-gh-pages) package (See available scripts for how it works).
 
 ## Available Scripts
 
@@ -19,7 +21,7 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `npm run build`/`npm run predeploy`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -28,6 +30,10 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run deploy`
+
+This will build the app for production and push contents from running the build into the `gh-pages` branch. The page hosted for [doanah2000](doanah2000.github.io) on github.io uses the distributable version of the React app on the `gh-pages` branch.
 
 ### `npm run eject`
 
